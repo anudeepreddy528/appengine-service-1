@@ -6,8 +6,12 @@ var bodyParser= require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.get('/',(req,res)=>{
+  res.status(200).send('Hello world from service 1');
+});
+
 app.get('/service1',(req,res)=>{
-    res.status(200).send('Hello World from microservice 1');
+    res.status(200).send('Hello World from service 1 method');
 });
 app.get('/service1/values',(req,res)=>{
   res.status(200).send('value is 100');

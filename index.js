@@ -6,10 +6,12 @@ var bodyParser= require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/microservice1',(req,res)=>{
+app.get('/service1',(req,res)=>{
     res.status(200).send('Hello World from microservice 1');
 });
-
+app.get('/service1/values',(req,res)=>{
+  res.status(200).send('value is 100');
+});
 var port = process.env.PORT || 3001;
 app.listen(port, function () {
   console.log(`Server running on ${port}`);

@@ -1,0 +1,3 @@
+dispatch:
+  - url: "*/microservice1"
+    service: service1

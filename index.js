@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/service1',(req,res)=>{
-    res.status(200).send('responding from service 1 service');
+    res.status(200).send('responding from updated service 1 of type service');
 });
 
 var port = process.env.PORT || 3001;

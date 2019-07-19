@@ -11,10 +11,10 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/service1',(req,res)=>{
-    res.status(200).send('Hello World from service 1 method');
+    res.status(200).send('Hello World updated from service 1 method');
 });
-app.get('/service1/values',(req,res)=>{
-  res.status(200).send('value is 100');
+app.get('/service1/number',(req,res)=>{
+  res.status(200).send('Always Number one');
 });
 var port = process.env.PORT || 3001;
 app.listen(port, function () {

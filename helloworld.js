@@ -5,7 +5,7 @@
  * @param {!express:Response} res HTTP response context.
  */
 exports.helloWorld = (req, res) => {
-    let message = req.query.message || req.body.message || 'Hello World!';
+    let message = req.query.message || req.body.message || 'Hello World version 2.0';
     res.status(200).send(message);
   };
   

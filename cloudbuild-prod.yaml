@@ -5,4 +5,4 @@ steps:
   args: ['test']
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: bash
-  args: ['./scripts/deploy.sh']
+  args: ['./scripts/prod-deploy.sh']
